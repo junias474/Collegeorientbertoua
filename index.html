@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orient Bertoua - Collège Bilingue de L'Orient Bertoua Cameroun</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="bi bi-mortarboard"></i>
+                Orient Bertoua
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#programmes">Programmes</a></li>
+                <li><a href="#statistiques">Statistiques</a></li>
+                <li><a href="#nos">Nos Atouts</a></li>
+                <li><a href="#vision">Notre Vision</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
+        <!-- Mobile/Tablet Navigation Overlay -->
+        <div class="nav-overlay">
+            <button class="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#programmes">Programmes</a></li>
+                <li><a href="#statistiques">Statistiques</a></li>
+                <li><a href="#nos">Nos Atouts</a></li>
+                <li><a href="#vision">Notre Vision</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Hero Section with Slider -->
+    <section id="accueil" class="hero">
+        <div class="hero-slider">
+            <div class="slide"><img src="img/imageprogramerentrer.png" alt="Programme d'entrée"></div>
+            <div class="slide"><img src="img/imagerassemblement.jpg" alt="Rassemblement"></div>
+            <div class="slide"><img src="img/imageinciterev.png" alt="Incitation révision"></div>
+            <div class="slide"><img src="img/imagerecap.png" alt="Récapitulatif"></div>
+            <div class="slide"><img src="img/imagediscussioneduc.jpg" alt="Discussion éducative"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Orient Bertoua</h1>
+            <p>Collège Bilingue de L'Orient - Excellence Éducative à Bertoua</p>
+            <a href="#apropos" class="cta-button">Découvrir notre école</a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">À Propos de Notre École</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Le Collège Bilingue de L'Orient à Bertoua est une institution d'excellence qui offre une éducation de qualité dans un environnement bilingue français-anglais. Nous nous engageons à former les leaders de demain en alliant rigueur académique, valeurs morales et ouverture sur le monde.</p>
+                    <p>Notre établissement accueille les élèves dans un cadre moderne et bienveillant, avec des enseignants qualifiés et dévoués qui accompagnent chaque élève vers la réussite.</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="img/imageecolelibre.jpg" alt="École libre - Collège Bilingue Orient Bertoua">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Programs Section -->
+    <section id="programmes" class="programs">
+        <div class="container">
+            <h2 class="section-title fade-in">Nos Programmes</h2>
+            <div class="programs-grid">
+                <div class="program-card fade-in">
+                    <i class="bi bi-flask program-icon"></i>
+                    <h3>Enseignement Secondaire 1er Cycle</h3>
+                    <p>Classes de 6ème à 3ème avec préparation intensive au BEPC dans un environnement bilingue.</p>
+                </div>
+                <div class="program-card fade-in">
+                    <i class="bi bi-mortarboard program-icon"></i>
+                    <h3>Enseignement Secondaire 2nd Cycle</h3>
+                    <p>Classes de Seconde, Première et Terminale avec préparation aux baccalauréats A, C et D.</p>
+                </div>
+                <div class="program-card fade-in">
+                    <i class="bi bi-globe program-icon"></i>
+                    <h3>Éducation Bilingue</h3>
+                    <p>Maîtrise parfaite du français et de l'anglais pour une ouverture internationale.</p>
+                </div>
+                <div class="program-card fade-in">
+                    <i class="bi bi-laptop program-icon"></i>
+                    <h3>Technologies Modernes</h3>
+                    <p>Intégration des nouvelles technologies dans l'apprentissage quotidien et cours d'informatique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Statistics Section -->
+    <section id="statistiques" class="statistics">
+        <div class="container">
+            <h2 class="section-title fade-in"><span>Nos statistiques de réussite aux examens</span></h2>
+
+            <div class="year-selector fade-in">
+                <button class="year-btn active" data-year="2023-2024">2023-2024</button>
+                <button class="year-btn" data-year="2022-2023">2022-2023</button>
+                <button class="year-btn" data-year="2021-2022">2021-2022</button>
+                <button class="year-btn" data-year="2020-2021">2020-2021</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <h3><i class="bi bi-trophy"></i> BEPC (Brevet d'Études du Premier Cycle)</h3>
+                    <div class="chart-container">
+                        <canvas id="bepcChart"></canvas>
+                    </div>
+                </div>
+                <div class="stat-card fade-in">
+                    <h3><i class="bi bi-mortarboard-fill"></i> BAC (Baccalauréat)</h3>
+                    <div class="chart-container">
+                        <canvas id="bacChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nos Section -->
+    <section id="nos" class="nos-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nos Atouts</h2>
+            <div class="nos-grid">
+                <div class="nos-item fade-in">
+                    <i class="bi bi-person-workspace nos-icon"></i>
+                    <h3>Nos Enseignants</h3>
+                    <p>Corps professoral qualifié et expérimenté, dévoué à la réussite de chaque élève.</p>
+                </div>
+                <div class="nos-item fade-in">
+                    <i class="bi bi-buildings nos-icon"></i>
+                    <h3>Nos Infrastructures</h3>
+                    <p>Bâtiments modernes, salles équipées, laboratoires et espaces de loisirs adaptés.</p>
+                </div>
+                <div class="nos-item fade-in">
+                    <i class="bi bi-lightbulb nos-icon"></i>
+                    <h3>Nos Méthodes</h3>
+                    <p>Pédagogie innovante alliant tradition et modernité pour un apprentissage optimal.</p>
+                </div>
+                <div class="nos-item fade-in">
+                    <i class="bi bi-graph-up-arrow nos-icon"></i>
+                    <h3>Nos Résultats</h3>
+                    <p>Taux de réussite exceptionnel aux examens officiels et excellence académique reconnue.</p>
+                </div>
+                <div class="nos-item fade-in">
+                    <i class="bi bi-heart nos-icon"></i>
+                    <h3>Nos Valeurs</h3>
+                    <p>Respect, intégrité, excellence et solidarité au cœur de notre projet éducatif.</p>
+                </div>
+                <div class="nos-item fade-in">
+                    <i class="bi bi-eye nos-icon"></i>
+                    <h3>Notre Vision</h3>
+                    <p>Former des citoyens responsables, créatifs et ouverts sur le monde de demain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <h2 class="section-title fade-in">Notre Vision</h2>
+            <div class="vision-content">
+                <div class="vision-text fade-in">
+                    <p>Être l'établissement de référence en Afrique Centrale pour l'excellence éducative bilingue, formant des leaders éclairés, créatifs et responsables, capables de relever les défis du 21ème siècle et de contribuer positivement au développement de leur communauté et du monde.</p>
+
+                    <p>Nous aspirons à créer un environnement d'apprentissage innovant où chaque élève peut développer son plein potentiel, dans le respect de la diversité culturelle et linguistique, tout en cultivant les valeurs d'intégrité, d'excellence et de service à la communauté.</p>
+                </div>
+
+                <div class="vision-stats">
+                    <div class="vision-stat fade-in">
+                        <div class="vision-stat-number">15+</div>
+                        <div class="vision-stat-text">Années d'Excellence</div>
+                    </div>
+                    <div class="vision-stat fade-in">
+                        <div class="vision-stat-number">500+</div>
+                        <div class="vision-stat-text">Élèves Diplômés</div>
+                    </div>
+                    <div class="vision-stat fade-in">
+                        <div class="vision-stat-number">95%</div>
+                        <div class="vision-stat-text">Taux de Réussite</div>
+                    </div>
+                    <div class="vision-stat fade-in">
+                        <div class="vision-stat-number">2</div>
+                        <div class="vision-stat-text">Langues d'Enseignement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos contacts rapide bar -->
+    <div class="quick-contacts-bar fade-in">
+        <span class="quick-contacts-title">Nos contacts rapide :</span>
+        <a href="https://wa.me/237XXXXXXXXX" target="_blank" class="quick-contact-icon" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://facebook.com/" target="_blank" class="quick-contact-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="mailto:contact@orientbertoua.edu.cm" class="quick-contact-icon" title="Gmail"><i class="bi bi-envelope-fill"></i></a>
+        <a href="tel:+237XXXXXXXXX" class="quick-contact-icon" title="Téléphone"><i class="bi bi-telephone-fill"></i></a>
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">Galerie Photos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="img/imageprogramerentrer.png" alt="Programme d'entrée - Orient Bertoua">
+                    <div class="gallery-overlay">
+                        <div>Programme d'Entrée<br><small>Orientation et accueil des nouveaux élèves</small></div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="img/imagerassemblement.jpg" alt="Rassemblement - Orient Bertoua">
+                    <div class="gallery-overlay">
+                        <div>Rassemblement<br><small>Moments de communion et d'échange</small></div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="img/imageinciterev.png" alt="Incitation révision - Orient Bertoua">
+                    <div class="gallery-overlay">
+                        <div>Révisions Intensives<br><small>Préparation aux examens</small></div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="img/imagerecap.png" alt="Récapitulatif - Orient Bertoua">
+                    <div class="gallery-overlay">
+                        <div>Bilan Académique<br><small>Suivi et évaluation des progrès</small></div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="img/imagediscussioneduc.jpg" alt="Discussion éducative - Orient Bertoua">
+                    <div class="gallery-overlay">
+                        <div>Débats Éducatifs<br><small>Échanges et discussions constructives</small></div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="img/imageecolelibre.jpg" alt="École libre - Orient Bertoua">
+                    <div class="gallery-overlay">
+                        <div>Esprit Libre<br><small>Environnement d'apprentissage ouvert</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Contactez-Nous</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt contact-icon"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Bertoua, Région de l'Est, Cameroun</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-telephone contact-icon"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+237 XXX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-envelope contact-icon"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@orientbertoua.edu.cm</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-clock contact-icon"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun-Ven: 7h00 - 17h00<br>Sam: 8h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in">
+                    <input type="text" placeholder="Nom complet" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Téléphone">
+                    <textarea rows="5" placeholder="Votre message" required></textarea>
+                    <button type="submit">
+                        <i class="bi bi-send"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Orient Bertoua - Collège Bilingue de L'Orient. Tous droits réservés.</p>
+            <p>Excellence • Intégrité • Innovation</p>
+            <div class="footer-signature">
+                Made By BEDING MEROUA JUNIAS
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Statistics data by year
+        const statsData = {
+            '2023-2024': {
+                bepc: { admis: 92, echecs: 8, total: 100 },
+                bac: { admis: 88, echecs: 12, total: 100 }
+            },
+            '2022-2023': {
+                bepc: { admis: 90, echecs: 10, total: 100 },
+                bac: { admis: 85, echecs: 15, total: 100 }
+            },
+            '2021-2022': {
+                bepc: { admis: 87, echecs: 13, total: 100 },
+                bac: { admis: 82, echecs: 18, total: 100 }
+            },
+            '2020-2021': {
+                bepc: { admis: 85, echecs: 15, total: 100 },
+                bac: { admis: 80, echecs: 20, total: 100 }
+            }
+        };
+        let bepcChart, bacChart;
+        // Initialize charts
+        function initCharts() {
+            const chartConfig = (data, title, color) => ({
+                type: 'doughnut',
+                data: {
+                    labels: ['Admis', 'Échecs'],
+                    datasets: [{
+                        data: [data.admis, data.echecs],
+                        backgroundColor: [color, '#e74c3c'],
+                        borderWidth: 0,
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                color: 'white',
+                                padding: 20,
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.label + ': ' + context.parsed + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            const currentData = statsData['2023-2024'];
+            const bepcCtx = document.getElementById('bepcChart').getContext('2d');
+            bepcChart = new Chart(bepcCtx, chartConfig(currentData.bepc, 'BEPC', '#3498db'));
+            const bacCtx = document.getElementById('bacChart').getContext('2d');
+            bacChart = new Chart(bacCtx, chartConfig(currentData.bac, 'BAC', '#f39c12'));
+        }
+        // Update charts based on selected year
+        function updateCharts(year) {
+            const data = statsData[year];
+            bepcChart.data.datasets[0].data = [data.bepc.admis, data.bepc.echecs];
+            bepcChart.update();
+            bacChart.data.datasets[0].data = [data.bac.admis, data.bac.echecs];
+            bacChart.update();
+        }
+        // Year selector functionality
+        document.querySelectorAll('.year-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                updateCharts(this.dataset.year);
+            });
+        });
+        // Mobile menu functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navOverlay = document.querySelector('.nav-overlay');
+        const closeMenu = document.querySelector('.close-menu');
+        menuToggle.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        closeMenu.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-overlay .nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message ! Nous vous répondrons bientôt.');
+            this.reset();
+        });
+        // Gallery item click effect
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+        // Initialize charts when page loads
+        window.addEventListener('load', () => {
+            // Delay chart initialization to ensure DOM is ready
+            setTimeout(initCharts, 500);
+        });
+        // Handle resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
